@@ -1,12 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<style>
-    		html, body {
-        		overflow: auto !important;
-        		height: auto !important;
-    		}
-	</style>
 
 	<script type="text/javascript" src="https://apps.reonic.de/elements/reonic-loader.js" defer="1"></script>
 	<meta charset="UTF-8">
@@ -37,7 +31,11 @@
 <body class="side-panel-light has-loading-screen color-theme-blue" data-background-color="#000000">
 
     <!--PAGE-->
-	
+	<!-- Wrapper div around the GUI element with fixed height and overflow set to hidden -->
+	<div style="max-height: 400px; overflow: hidden;">
+	    <div data-reonic-type="element" data-product="energyhouse" data-client-id="d96b0409-fce0-49fe-ba29-b3e2b44e9505"></div>
+	</div>
+
 	<div id="page">
 		<div class="page-wrapper">
 			<figure class="page-wrapper-inner">
