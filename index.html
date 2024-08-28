@@ -4,6 +4,27 @@
     <!-- Reonic script -->
     <script type="text/javascript" src="https://apps.reonic.de/elements/reonic-loader.js" defer="1"></script>
 
+    <style>
+        html, body {
+            height: auto;
+            overflow: auto;
+            position: relative;
+        }
+    
+        /* Ensure no element forces the page into a fixed height */
+        #page, .page-wrapper, .layer {
+            position: relative;
+            height: auto;
+            overflow: visible;
+        }
+    
+        /* If there's any fixed position for the background or layers, change to relative */
+        .base-layer, .layer.animate {
+            position: relative;
+        }
+    </style>
+
+    
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
